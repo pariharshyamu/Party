@@ -1,0 +1,19 @@
+input_string = input("Enter all party members name separated by space  ")
+# Split string into words
+family_list = input_string.split(" ")
+
+print("\n")
+# Iterate a list
+print("Printing all family member names:")
+for name in family_list:
+    print(name)
+s = len(family_list)
+print("Total Participants are:", s)
+v = int(input("Veg Members:"))
+nv = s-v
+print("Non-Veg Members:", nv)
+d = int(input("Enter Drinking Person:"))
+print("Drinks Required:", 90*d, "ml")
+print("Mutton Required:", 0.4*nv, "kg")
+print("Paneer Required:", 100*v, "g")
+print("Onion Required: 1kg")
